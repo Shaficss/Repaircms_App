@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Page02 extends StatelessWidget {
   const Page02 ({super.key});
@@ -39,7 +38,9 @@ class Page02 extends StatelessWidget {
             Card(
               color: const Color.fromARGB(255, 255, 255, 255),
               child:
-              const SizedBox(width: 409,height: 92,),
+              const SizedBox(width: 409,height: 92,)
+              
+              
               
 
             )

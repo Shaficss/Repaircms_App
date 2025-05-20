@@ -37,6 +37,7 @@ dependencies:
   flutter_svg: ^2.1.0
   http:
   email_validator: ^2.1.17
+  dropdown_search: ^6.0.2
 
 dev_dependencies:
   flutter_test:

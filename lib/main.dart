@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(183, 228, 228, 228)),
       ),
-      home: const Page03(),
+      home: const SearchBarApp(),
       //home: const MyHomePage(title:'Repair CMS'),
     );
   }

@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // function to fetch data from api and return future list of posts
   static Future<List<Post>> getPosts() async {
-    var url = Uri.parse("https://jsonplaceholder.typicode.com/albums/1/photos");
+    var url = Uri.parse("https://63c1210999c0a15d28e1ec1d.mockapi.io/users");
     final response = await http.get(url, headers: {"Content-Type": "application/json"});
     final List body = json.decode(response.body);
     return body.map((e) => Post.fromJson(e)).toList();
@@ -80,9 +80,11 @@ class _MyHomePageState extends State<MyHomePage> {
           width: double.maxFinite,
           child: Row(
             children: [
-              Expanded(flex: 1, child: Text(post.url!)),
+              
+
+              Expanded(flex: 1, child: Image.network(post.avatar!,)),
               SizedBox(width: 10),
-              Expanded(flex: 3, child: Text(post.title!)),
+              Expanded(flex: 2, child: Text(post.name!)),
             ],
           ),
         );
